@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task-8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.css" integrity="sha512-nnNXPeQKvNOEUd+TrFbofWwHT0ezcZiFU5E/Lv2+JlZCQwQ/ACM33FxPoQ6ZEFNnERrTho8lF0MCEH9DBZ/wWw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.css" integrity="sha512-nnNXPeQKvNOEUd+TrFbofWwHT0ezcZiFU5E/Lv2+JlZCQwQ/ACM33FxPoQ6ZEFNnERrTho8lF0MCEH9DBZ/wWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icons -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- fonts -->
+ 
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+   
+
+    <!-- script file -->
+    <script src="script.js"></script>
+   
+    <!-- script file -->
+  </head>
+  <body>
+    <%- include('subfolder/side1') %>
+    <%- include('subfolder/side2') %>
+    <%- include('subfolder/nav') %>
+
+    <div class="content">
+      <div class="c1 wow animate__animated animate__fadeInUp">
+        <div class="c11">
+          <% if (successMessage && successMessage.length > 0) { %>
+            <div class="alert alert-success">
+                <%= successMessage[0] %>
+            </div>
+        <% } %>
+          <h1 id="d2">Welcome To Dashboard</h1>
+          <p>Home / Project Dashboard</p>
+        </div>
+        <div class="c12">
+          <button class="b1"><i class="ri-arrow-down-line"></i>Import</button>
+          <button class="b1"><i class="ri-filter-2-line"></i>Filter</button>
+          <button class="b2">
+            <i class="ri-copyright-line"></i>Download Report
+          </button>
+        </div>
+      </div>
+
+      <div class="c2  wow animate__animated animate__fadeInUp" >
+        
+        <div class="cleft">
+          <div class="cl1">
+            <h1>Sobia Taylor!</h1>
+            <p>
+              You Have Tow projects to finish, you had completed 57% from your
+              montly level, Keep going to your level
+            </p>
+            <img src="work3.png" alt="" />
+          </div>
+          <div class="cl2  wow animate__animated animate__fadeInUp">
+            <div class="cl22">
+              <div class="cl222">
+                <h1>TOTAL REVENUE</h1>
+                <p>Previous month vs this months</p>
+                <span>$5,900.00</span>
+                <h3><span>55%</span>Higher</h3>
+              </div>
+              <div class="cl2222">
+                <i class="ri-drag-move-line"></i>
+              </div>
+            </div>
+            <div class="cl22">
+              <div class="cl222">
+                <h1>TOTAL REVENUE</h1>
+                <p>Previous month vs this months</p>
+                <span>15</span>
+                <h3><span>5%</span>Increased</h3>
+              </div>
+              <div class="cl2222">
+                <i class="ri-ancient-gate-fill"></i>
+              </div>
+            </div>
+            <div class="cl22">
+              <div class="cl222">
+                <h1>TOTAL REVENUE</h1>
+                <p>Previous month vs this months</p>
+                <span>$8,500.00</span>
+                <h3><span id="red">12%</span>Decrease</h3>
+              </div>
+              <div class="cl2222">
+                <i class="ri-award-fill"></i>
+              </div>
+            </div>
+          </div>
+
+          <div id="chart" class=" wow animate__animated animate__fadeInUp" >
+            <canvas id="myChart"></canvas>
+
+          </div>
+
+        </div>
+        <div class="cright  wow animate__animated animate__fadeInUp">
+          <h1>RECENT TRANSACTIONS</h1>
+          <p>Projects where work fair the is on completion</p>
+          <div class="cr1">
+            <img src="4.jpg" alt="">
+            <div class="cr11">
+              <h1>Flicker</h1>
+              <p>App improvement</p>
+            </div>
+            <div class="cr111">
+              <h1>$45.234</h1>
+              <p>12 Jan 2020</p>
+            </div>
+          </div>
+          <div class="cr1">
+            <img src="5.jpg" alt="">
+            <div class="cr11">
+              <h1>Flicker</h1>
+              <p>App improvement</p>
+            </div>
+            <div class="cr111">
+              <h1>$45.234</h1>
+              <p>12 Jan 2020</p>
+            </div>
+          </div>
+          <div class="cr1">
+            <img src="6.jpg" alt="">
+            <div class="cr11">
+              <h1>Flicker</h1>
+              <p>App improvement</p>
+            </div>
+            <div class="cr111">
+              <h1>$45.234</h1>
+              <p>12 Jan 2020</p>
+            </div>
+          </div>
+          <div class="cr1">
+            <img src="7.jpg" alt="">
+            <div class="cr11">
+              <h1>Flicker</h1>
+              <p>App improvement</p>
+            </div>
+            <div class="cr111">
+              <h1>$45.234</h1>
+              <p>12 Jan 2020</p>
+            </div>
+          </div>
+          <div class="cr1">
+            <img src="3.jpg" alt="">
+            <div class="cr11">
+              <h1>Flicker</h1>
+              <p>App improvement</p>
+            </div>
+            <div class="cr111">
+              <h1>$45.234</h1>
+              <p>12 Jan 2020</p>
+            </div>
+          </div>
+          <div class="cr1">
+            <img src="2.jpg" alt="">
+            <div class="cr11">
+              <h1>Flicker</h1>
+              <p>App improvement</p>
+            </div>
+            <div class="cr111">
+              <h1>$45.234</h1>
+              <p>12 Jan 2020</p>
+            </div>
+          </div>
+          <div class="cr1">
+            <img src="1.jpg" alt="">
+            <div class="cr11">
+              <h1>Flicker</h1>
+              <p>App improvement</p>
+            </div>
+            <div class="cr111">
+              <h1>$45.234</h1>
+              <p>12 Jan 2020</p>
+            </div>
+          </div>
+          <div class="cr1">
+            <img src="2.jpg" alt="">
+            <div class="cr11">
+              <h1>Flicker</h1>
+              <p>App improvement</p>
+            </div>
+            <div class="cr111">
+              <h1>$45.234</h1>
+              <p>12 Jan 2020</p>
+            </div>
+          </div>
+          <div class="cr1">
+            <img src="7.jpg" alt="">
+            <div class="cr11">
+              <h1>Flicker</h1>
+              <p>App improvement</p>
+            </div>
+            <div class="cr111">
+              <h1>$45.234</h1>
+              <p>12 Jan 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.42.0/apexcharts.min.js" integrity="sha512-HctQcT5hnI/elQck4950pvd50RuDnjCSGSoHI8CNyQIYVxsUoyJ+gSQIOrll4oM/Z7Kfi7WCLMIbJbiwYHFCpA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+<script>
+  const xValues = [100,200,300,400,500,600,700,800,900,1000];
+  
+  new Chart("myChart", {
+    type: "line",
+    data: {
+      labels: xValues,
+      datasets: [{ 
+        data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+        borderColor: "rgb(98,89,202)",
+        fill: false
+      }, {
+        data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+        borderColor: "rgb(98,89,202)",
+      
+        fill: false
+      },{ 
+        data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
+        borderColor: "rgb(98,89,202)",
+        fill: false
+      }]
+    },
+    options: {
+      legend: {display: false}
+    }
+  });
+  </script>

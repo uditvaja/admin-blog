@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViewData</title>
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    <h1>
+        ViewData
+    </h1>
+     
+    <center>
+        <table class="text-center" width="1000" border="1" cellpadding="3" cellspacing="2">
+            <thead>
+                <tr>
+                    <th>
+                        No
+                    </th>
+                    <th>
+                        First name
+                    </th>
+                    <th>
+                        Last name
+                    </th>
+                    <th>
+                        number
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                   
+                    <th>
+                        Buttons
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <% students.forEach((std,index)=>{%>
+                    <tr>
+                        <td>
+                            <%=index+1%>
+                        </td>
+                        <td>
+                            <%=std.fname%>
+                        </td>
+                        <td>
+                            <%=std.lname%>
+                        </td>
+                        <td>
+                            <%=std.number%>
+                        </td>
+                        <td>
+                            <%=std.email%>
+                        </td>
+                        
+                        <td>
+                            <a href="/deletestd/<%= std.id %>">Delete</a>
+                            ||
+                            <a href="/editstd/<%= std.id %>">Edit</a>
+                        </td>
+                    </tr>
+                    <% })%>
+            </tbody>
+        </table>
+        <button class="btn">
+            <a href="/">
+                home page
+            </a>
+        </button>  
+    </center>
+</body>
+
+</html>

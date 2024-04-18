@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+     
+    <!-- css -->
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- css -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="cleft">
+                <h1>Creat a new account <span>.</span></h1>
+                <p>already a member? <span>log in.</span></p>
+                <div class="i1">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div class="i2">
+                    <label>Email</label>
+                    <input type="email" placeholder="email@example.com">
+                </div>
+                <div class="i3">
+                    <label>password</label>
+                    <input type="password" id="bo" placeholder="********">
+                </div>
+                <div class="i4">
+                   
+                    <p><i class="ri-checkbox-blank-line" id="check"></i> terms & conditions.</p>
+                    <a href="index.html"><button id="c1">confrim</button></a>
+                    
+                   
+                </div>
+            </div>
+            <div class="cright">
+                <img src="Group 3.png" alt="">
+                <h2>join for free.</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    $("#c1").click(function(){
+        alert("Go To The Admin Pannel");
+    })
+   
+    $("#check").click(function(){
+        $("#check").toggleClass("ri-checkbox-blank-line, ri-checkbox-line")
+    })
+</script>
+</html>

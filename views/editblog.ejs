@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form method="post" action="/blogdetail">
+        <input type="text" name="editid" value="<%=singlerecord.id%>" hidden>
+        <div class="form-row">
+            <div class="input-data">
+                <input type="text" name="blog" value="<%=singlerecord.blog%>" required>
+                <div class="underline"></div>
+                <label for="">blog</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-data">
+                <input type="number" name="title" value="<%=singlerecord.title%>" required>
+                <div class="underline"></div>
+                <label for="rating">Movie Rating</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-data">
+                <input type="text" name="director" value="<%=singlerecord.director%>" required>
+                <div class="underline"></div>
+                <label for="director">Movie Director</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-data">
+                <textarea name="description" rows="4" required><%=singlerecord.description%></textarea>
+                <div class="underline"></div>
+                <label for="description">Movie Description</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <input type="submit" value="Submit">
+        </div>
+    </form> -->
+    <div class="container">
+        <div class="fmain container-fluid pt-4 px-4 ">
+            <div class="row g-4">
+                <div class="col-sm-12 col-xl-6">
+                    <div class="bg-secondary rounded h-100 p-4">
+                        <h6 class="mb-4">Add Blogs</h6>
+                        <form action="/blogdetail" method="post" enctype="multipart/form-data">
+                            <input type="text" name="editid" value="<%=singlerecord.id%>" hidden>
+                            <div class="form-group">
+                                <label for="avatar" class="pb-2">Select Blog Image  </label>
+                                <input type="file" id="avatar" name="avatar">
+                            </div>
+                              <br/>
+                              <div class="mb-3">
+                                <label for="title" class="form-label"> Blog Title</label>
+                                <input type="text" class="form-control" id="title" name="title"
+                                    aria-describedby="emailHelp" value="<%=singlerecord.title%>" >
+                            </div>
+                            <div class="mb-3">
+                                <label for="blog" class="form-label">blog</label>
+                                <textarea  id="blog" name="blog" rows="4" cols="50"><%=singlerecord.blog%></textarea>
+                            </div>  
+                           
+                            <br>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>             
+            </div>
+
+    </div>
+    </div>
+</body>
+</html>
